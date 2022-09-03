@@ -1,0 +1,31 @@
+{
+  "name": "TestesUnidadeJest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "jest ./src"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/runtime": "^7.11.1",
+    "babel-jest": "^26.2.2",
+    "jest": "^26.2.2"
+  },
+  "dependencies": {
+    "winston": "^3.3.3"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/setupTests.js"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec).(js|jsx)?(x)"
+    ],
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.(js|jsx)?$": "babel-jest"
+    }
+  }
+}
