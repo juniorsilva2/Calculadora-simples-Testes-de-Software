@@ -1,1 +1,0 @@
-Projeto de uma calculadora simples para formulação de testes unitários.
